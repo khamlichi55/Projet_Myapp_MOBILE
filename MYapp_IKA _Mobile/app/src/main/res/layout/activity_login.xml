@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#E6CABE">
+    <TextView
+        android:id="@+id/tv_quiz_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenue"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"/>
+    <!-- Logo ou image -->
+    <ImageView
+        android:layout_width="411dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
+        android:contentDescription="Login Illustration"
+        android:src="@drawable/image_log" />
+
+    <!-- Champ Login -->
+    <EditText
+        android:id="@+id/etlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:padding="10dp"
+        android:backgroundTint="#2196F3"
+        android:textColorHint="#777"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mots de passe"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/baseline_password_24"
+        android:padding="10dp"
+        android:backgroundTint="#2196F3"
+        android:textColorHint="#777"
+        android:textColor="#000" />
+
+
+    <!-- Bouton Connexion -->
+    <Button
+        android:id="@+id/blogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Se connecter"
+        android:textAllCaps="true"
+        android:backgroundTint="#3F51B5"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="15dp" />
+
+    <!-- Lien vers l'inscription -->
+    <TextView
+        android:id="@+id/tvregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Creer un compte"
+        android:textColor="#3F51B5"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true" />
+
+</LinearLayout>

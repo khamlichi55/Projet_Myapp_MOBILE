@@ -1,0 +1,25 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Cercle gris en arrière-plan -->
+    <item android:id="@android:id/background">
+        <shape android:shape="ring"
+            android:useLevel="false"
+            android:thicknessRatio="20">
+            <solid android:color="#E0E0E0"/> <!-- Couleur du fond -->
+        </shape>
+    </item>
+
+    <!-- Cercle qui montre le progrès -->
+    <item android:id="@android:id/progress">
+        <rotate
+            android:fromDegrees="-90"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toDegrees="270">
+            <shape android:shape="ring"
+                android:useLevel="true"
+                android:thicknessRatio="20">
+                <solid android:color="#6200EE"/> <!-- Couleur de la progression -->
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#E4C8BC">
+
+    <TextView
+        android:id="@+id/tvReady"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vous êtes prêt à passer le quiz ?"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_marginBottom="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnYes"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#4CAF50"
+            android:text="Oui"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
+            android:text="Non"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bMap"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F467"
+        android:text="Map" />
+
+    <Button
+        android:id="@+id/openCameraBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F467"
+        android:text="Ouvrir ma Caméra" />
+    <Button
+        android:id="@+id/openMicroBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F467"
+        android:text="Ouvrir mon Micro"/>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"/>
+</LinearLayout>
